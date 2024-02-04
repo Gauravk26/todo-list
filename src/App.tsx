@@ -4,11 +4,11 @@ import { useState } from "react";
 import InputBar from "./InputBar.tsx";
 import ItemsList from "./ItemsList.tsx";
 import "./App.css";
-import TodoContext from "./context/todoContext.tsx";
+import TodoContext  from "./context/todoContext.tsx";
 
 export default function App() {
-  const [list, setList] = useState<String[]>([]);
-  function handleList(input: String) {
+  const [list, setList] = useState<string[]>([]);
+  function handleList(input: string) {
     let prevList = [...list];
     prevList.push(input);
     setList(prevList);

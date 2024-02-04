@@ -3,7 +3,7 @@ import TodoContext from "./context/todoContext";
 
 
 export default function ItemsList() {
-  const listValue: String[] = useContext(TodoContext);
+  const listValue: string[] = useContext(TodoContext);
   return (
     <div>
       <h2>List of Items</h2>
